@@ -3,7 +3,7 @@
 node {
     // Setup variables
     // application name will be used in a few places so create a variable and use string interpolation to use it where needed
-    String applicationName = "quay-robots-manager"
+    String applicationName = "quay-robot-manager"
     // a basic build number so that when we build and push to Artifactory we will not overwrite our previous builds
     String buildNumber = "0.1.${env.BUILD_NUMBER}"
     // Path we will mount the project to for the Docker container
