@@ -34,6 +34,8 @@ var createCmd = &cobra.Command{
 		}
 
 		fmt.Println("Created robot: ", name, "under", org)
+		fmt.Println("Name:", robot.Name)
+		fmt.Println("Token:", robot.Token)
 		if err != nil {
 			log.Fatal().Msgf("error creating new robot: %s", err)
 		}
